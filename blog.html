@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="./custom.css" />
+    <link rel="stylesheet" href="./custom.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="grid-container blog">
       <header class="header">
         <nav class="navigation">
           <ul>
             <li>
-              <a href="index.html" class="active">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
               <a href="portfolio.html">Portfolio</a>
@@ -22,7 +22,7 @@
               <a href="contact.html">Contact</a>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
+              <a href="blog.html" class="active">Blog</a>
             </li>
             <li>
               <a href="site-report.html">sitereport</a>
@@ -67,7 +67,7 @@
           <nav class="mobile-navigation">
             <ul>
               <li>
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <a href="portfolio.html">Portfolio</a>
@@ -76,7 +76,7 @@
                 <a href="contact.html">Contact</a>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <a href="blog.html" class="active">Blog</a>
               </li>
               <li>
                 <a href="site-report.html">sitereport</a>
@@ -85,25 +85,55 @@
           </nav>
         </div>
       </header>
-      <div class="section-wrapper">
-        <section class="portfolio-details">
-          <div class="portfolio">
-            <div class="portfolio-title">
-              <h1>
-                Hi,
-                <span>I am Pankaj</span>
-              </h1>
+      <section class="blog">
+        <div class="blog-wrapper">
+          <div class="blog-item">
+            <div class="my-blog">
+              <div class="blog-thumbnail">
+                <img src="images/blog.avif" alt="blog" />
+              </div>
+              <h1 class="blog-title">This is blog title</h1>
+              <div class="blog-date">2022-02-27</div>
+              <p class="blog-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                sunt natus consectetur fugiat totam necessitatibus fuga minima
+                placeat, quibusdam omnis, est ipsa cumque ullam impedit quam
+                deleniti laboriosam hic nesciunt.
+              </p>
             </div>
-            <div class="portfolio-desc">
-              <p>Learner | Tech enthusiast | Dreamer</p>
-            </div>
-            <a href="./portfolio.html" class="portfolio-cta">View Portfolio</a>
           </div>
-        </section>
-        <section class="portfolio-thumbnail">
-          <img src="images/1.jpg" alt="" />
-        </section>
-      </div>
+          <div class="blog-item">
+            <div class="my-blog">
+              <div class="blog-thumbnail">
+                <img src="images/blog.avif" alt="blog" />
+              </div>
+              <h1 class="blog-title">This is blog title</h1>
+              <div class="blog-date">2022-02-27</div>
+              <p class="blog-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                sunt natus consectetur fugiat totam necessitatibus fuga minima
+                placeat, quibusdam omnis, est ipsa cumque ullam impedit quam
+                deleniti laboriosam hic nesciunt.
+              </p>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="my-blog">
+              <div class="blog-thumbnail">
+                <img src="images/blog.avif" alt="blog" />
+              </div>
+              <h1 class="blog-title">This is blog title</h1>
+              <div class="blog-date">2022-02-27</div>
+              <p class="blog-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                sunt natus consectetur fugiat totam necessitatibus fuga minima
+                placeat, quibusdam omnis, est ipsa cumque ullam impedit quam
+                deleniti laboriosam hic nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer">
         <span>@ copyright Pankaj oli</span>
       </footer>
