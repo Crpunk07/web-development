@@ -282,11 +282,19 @@ nav.mobile-navigation ul li a {
 .portfolio-item {
   min-width: 100%;
   width: 100%;
+  cursor: pointer;
+  transition: transform 300ms;
+  transform: scale(1);
 }
 
 .portfolio-item img {
   width: 100%;
   object-fit: cover;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
 }
 
 .portfolio-list {
@@ -371,16 +379,14 @@ nav.mobile-navigation ul li a {
 .validation-images {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.progress-images img {
-  height: auto;
-  width: 30%;
-}
-
+.progress-images img,
 .validation-images img {
   height: auto;
-  width: 45%;
+  width: 100%;
+  margin: 10px 0;
 }
 
 /* End of site-report */
@@ -466,6 +472,14 @@ nav.mobile-navigation ul li a {
 
   .site-report h2 {
     margin: 40px 0 15px;
+  }
+
+  .progress-images img {
+    width: 30%;
+  }
+
+  .validation-images img {
+    width: 45%;
   }
 }
 
