@@ -60,7 +60,7 @@ nav.navigation {
   justify-content: center;
 }
 
-.portfolio-title h1 {
+.portfolio-title h2 {
   font-size: 30px;
   color: rgba(255, 255, 255, 0.9);
   text-transform: capitalize;
@@ -68,7 +68,7 @@ nav.navigation {
   margin-top: 15px;
 }
 
-.portfolio-title h1 span {
+.portfolio-title h2 span {
   margin-top: 15px;
 }
 
@@ -79,7 +79,7 @@ nav.navigation {
   margin-top: 8px;
 }
 
-section.portfolio-thumbnail img {
+.portfolio-thumbnail img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -216,7 +216,7 @@ nav.mobile-navigation ul li a {
   font-weight: 600;
   color: #fff;
   padding: 0 25px;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 .contact-info ul li {
@@ -314,6 +314,8 @@ nav.mobile-navigation ul li a {
   column-gap: 20px;
   margin: 40px auto;
   max-width: 1440px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 0;
 }
 
 .blog-title {
@@ -345,6 +347,44 @@ nav.mobile-navigation ul li a {
 
 /* End of Blog page */
 
+/* Start of site-report */
+.site-report {
+  padding: 0 25px;
+  overflow: auto;
+  margin: 25px 0;
+}
+
+.site-report h2 {
+  font-size: 24px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.site-report p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.progress-images,
+.validation-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-images img {
+  height: auto;
+  width: 30%;
+}
+
+.validation-images img {
+  height: auto;
+  width: 45%;
+}
+
+/* End of site-report */
+
 @media screen and (min-width: 768px) {
   header.header {
     justify-content: center;
@@ -354,7 +394,7 @@ nav.mobile-navigation ul li a {
     display: block;
   }
 
-  .portfolio-title h1 {
+  .portfolio-title h2 {
     font-size: 48px;
     margin-top: 0;
   }
@@ -384,7 +424,7 @@ nav.mobile-navigation ul li a {
     margin-bottom: 0;
   }
 
-  .portfolio-title h1 span {
+  .portfolio-title h2 span {
     display: block;
   }
 
@@ -415,13 +455,22 @@ nav.mobile-navigation ul li a {
     column-gap: 25px;
   }
 
-  .blog-title {
+  .blog-title,
+  .site-report h2 {
     font-size: 36px;
+  }
+
+  .site-report p {
+    font-size: 18px;
+  }
+
+  .site-report h2 {
+    margin: 40px 0 15px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .portfolio-title h1 {
+  .portfolio-title h2 {
     font-size: 60px;
   }
 
@@ -429,11 +478,16 @@ nav.mobile-navigation ul li a {
     width: 50%;
   }
 
-  .contact-title {
+  .contact-title,
+  .site-report h2 {
     font-size: 48px;
   }
 
   .portfolio-list {
     column-count: 3;
+  }
+
+  .site-report p {
+    font-size: 20px;
   }
 }
